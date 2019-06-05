@@ -15,8 +15,8 @@ __Known Bugs__ When randomizing planes (with  no placeholder at present), the ra
 
 __Next Steps__
 1. Resolve the above bug.
-2. Set it up for one placeholder for all entity types (planes, vehicles and blocks or now).
-3. Then set it up for multiple placeholders of each entity type - either with for each entity a List containing a List of Possibles and a 1-element List of Placeholder, or better a Record containing a List of Possibles and Placeholder (string).
+2. Set it up for one placeholder for each entity type (planes, vehicles and blocks or now), as required.
+3. Then set it up for multiple (0..n) placeholders of each entity type - either with for each entity a List containing a List of Possibles, and a 1-element List of Placeholder, or better a List of Records containing a List of Possibles and Placeholder (string).
 4. Have the entities written in numerical order to the FOW mission file.
 5. Then perhaps custom probabilities for each Possible.
 

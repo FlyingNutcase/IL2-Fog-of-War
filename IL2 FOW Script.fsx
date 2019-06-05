@@ -8,7 +8,7 @@ open System
 //
 //  FILE & FOLDER PATHS
 //               
-let missionFileName = "XXX"
+let missionFileName = "For FOW Vehicle Testing"
 let dirPathMissions = @"C:\p\1C Game Studios\IL-2 Sturmovik Great Battles\data\Missions\FN\"
 
 let filePathMission = 
@@ -17,11 +17,11 @@ let filePathMission =
 let writeFilePath = 
     dirPathMissions + missionFileName + "-fow.Mission"
 
-
+(*
 //  check paths
 printfn "Read path: %s" filePathMission
 printfn "Write path: %s" writeFilePath
-
+*)
 
 //
 //  1. READ the mission file
@@ -124,10 +124,14 @@ let randomizedPlaneEntriesList = randomisedEntriesList planeEntriesList
 let randmizedVehicleEntriesList = randomisedEntriesList vehicleEntriesList
 let randomizedBlockEntriesList = randomisedEntriesList blockEntriesLIst
 
+printfn "randomizedPlaneEntriesList.Count: %i" randomizedPlaneEntriesList.Length
+printfn "randmizedVehicleEntriesList.Count: %i" randmizedVehicleEntriesList.Length
+printfn "randomizedBlockEntriesList.Count: %i" randomizedBlockEntriesList.Length
+
 //
 //  4. RECONSTRUCT the Mission file text
 //
-let allMissionElements = missionVersionList @ missionOptionsList @ randomizedPlaneEntriesList @ randmizedVehicleEntriesList @ randomizedBlockEntriesList @ mcuEntriesList @ ["# end of file"]
+let allMissionElements = missionVersionList @ missionOptionsList @ planeEntriesList @ randmizedVehicleEntriesList @ randomizedBlockEntriesList @ mcuEntriesList @ ["# end of file"]
 
 let newFileContents = 
     allMissionElements
