@@ -8,7 +8,7 @@ open System
 //
 //  FILE & FOLDER PATHS
 //               
-let missionFileName = "For FOW Vehicle Testing"
+let missionFileName = "FOW Test - nonrandomising entities"
 let dirPathMissions = @"C:\p\1C Game Studios\IL-2 Sturmovik Great Battles\data\Missions\FN\"
 
 let filePathMission = 
@@ -92,7 +92,7 @@ let getRandomObject (possibles: string list) =
 //  The placeholder and list of possible replacements
 //
 let placeholderObject = "ba10m"
-let possibleObjects = ["_t34-76stz"; "ba64"; "ford-g917";"gaz-aa-m4-aa"]
+let possibleObjects = ["_t34-76stz"; "kv1-41"; "ba64"; "ford-g917";"gaz-aa-m4-aa"]
 
 (*
 //  test the random object generator 
